@@ -1,3 +1,4 @@
+document.body.style.backgroundColor = "yellow";
 function changeTextOnHover(element) {
   element.innerText = 'Call';
 }
