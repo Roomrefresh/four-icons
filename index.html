@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nepali Society Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar Code यहाँ सुरु हुन्छ -->
+<div class="sidebar-container">
+  <a href="tel:01046890738" class="member-request" onmouseover="changeTextOnHover(this)" onmouseout="resetText(this)">
+    Request for Member
+  </a>
+
+  <button id="memberCard" onclick="openPasswordBox()">Member Digital ID Card</button>
+  <div id="passwordBox">
+    <p>Enter Password:</p>
+    <input type="password" id="passwordInput" />
+    <button onclick="checkPassword()">Submit</button>
+    <button onclick="closePasswordBox()">Cancel</button>
+  </div>
+  <div id="popup" onclick="closePopup()">
+    <img id="popupImage" src="" />
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="popup-container" id="idPopup">
+    <h2>सही ID राख्नुहोस्</h2>
+    <input type="text" id="idInput" placeholder="Enter Member Id" />
+    <button onclick="checkID()">Submit</button>
+  </div>
+  <a href="#" onclick="openPopup()">
+    <button class="meet-btn">Join to Virtual Meet</button>
+  </a>
+
+  <a href="https://www.canva.com/design/DAGfKdjVXv0/d8vE94LxUl3ewH09SnuBhw/edit" class="custom-button" target="_blank">कोरियाली नेपाली समाजहरू</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
